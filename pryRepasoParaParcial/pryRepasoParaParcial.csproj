@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C72B1745-AB44-42AA-B5D0-AA8A2BD30AFA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>pryRepasoParaParcial</RootNamespace>
+    <AssemblyName>pryRepasoParaParcial</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsAlumnos.cs" />
+    <Compile Include="clsBarrios.cs" />
+    <Compile Include="clsConexion.cs" />
+    <Compile Include="clsFruta.cs" />
+    <Compile Include="clsLeGustan.cs" />
+    <Compile Include="frmAgregarOQuitarFrutaQueLeGustaAAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarOQuitarFrutaQueLeGustaAAlumno.Designer.cs">
+      <DependentUpon>frmAgregarOQuitarFrutaQueLeGustaAAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArbolFrutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArbolFrutas.Designer.cs">
+      <DependentUpon>frmArbolFrutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaAlumnoPorDni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaAlumnoPorDni.Designer.cs">
+      <DependentUpon>frmConsultaAlumnoPorDni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaAlumnoPorParteDeSuNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaAlumnoPorParteDeSuNombre.Designer.cs">
+      <DependentUpon>frmConsultaAlumnoPorParteDeSuNombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFrutasLeGustan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFrutasLeGustan.Designer.cs">
+      <DependentUpon>frmFrutasLeGustan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFrutasNoLeGustan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFrutasNoLeGustan.Designer.cs">
+      <DependentUpon>frmFrutasNoLeGustan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerTodasLasFrutas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerTodasLasFrutas.Designer.cs">
+      <DependentUpon>frmVerTodasLasFrutas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerTodosAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerTodosAlumnos.Designer.cs">
+      <DependentUpon>frmVerTodosAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoAlumno.Designer.cs">
+      <DependentUpon>NuevoAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaFruta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaFruta.Designer.cs">
+      <DependentUpon>NuevaFruta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoBarrio.Designer.cs">
+      <DependentUpon>NuevoBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAgregarOQuitarFrutaQueLeGustaAAlumno.resx">
+      <DependentUpon>frmAgregarOQuitarFrutaQueLeGustaAAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArbolFrutas.resx">
+      <DependentUpon>frmArbolFrutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaAlumnoPorDni.resx">
+      <DependentUpon>frmConsultaAlumnoPorDni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaAlumnoPorParteDeSuNombre.resx">
+      <DependentUpon>frmConsultaAlumnoPorParteDeSuNombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFrutasLeGustan.resx">
+      <DependentUpon>frmFrutasLeGustan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFrutasNoLeGustan.resx">
+      <DependentUpon>frmFrutasNoLeGustan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerTodasLasFrutas.resx">
+      <DependentUpon>frmVerTodasLasFrutas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerTodosAlumnos.resx">
+      <DependentUpon>frmVerTodosAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoAlumno.resx">
+      <DependentUpon>NuevoAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaFruta.resx">
+      <DependentUpon>NuevaFruta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoBarrio.resx">
+      <DependentUpon>NuevoBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
